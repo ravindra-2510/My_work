@@ -1,0 +1,30 @@
+/* program to multiply any number with their unit number
+Name = Ravindra Yadav */
+
+#include<stdio.h> //library function
+#include<math.h>//library function
+//function to convert in single digit and multiply 
+int getProduct(int num) 
+{ 
+    int product = 1; 
+  
+    while (num != 0)  
+    { 
+        product = product * (num % 10); 
+        num = num / 10; 
+    } 
+  
+    return product; 
+} 
+//main function
+int main()
+{
+    int num;
+    printf("enter the digit you want to multiply : \n");// message for user
+    scanf("%d",&num); // take input by user of which number want to multiply
+    int result =getProduct(num);// caling function
+   
+    
+    printf("after multiplication = \n %d",result);// message for user
+    return 0;
+}

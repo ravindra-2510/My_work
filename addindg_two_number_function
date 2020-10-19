@@ -1,0 +1,21 @@
+//Program of no return type and return parameter
+// function defination
+void sum (int num1,int num2 )
+{
+int sum; //declaration of sum 
+sum= num1+num2; //adding both number
+printf("sum of both number is %d\n", sum); //printing value of sum
+}
+
+//main function
+#include<stdio.h>
+void main()
+{ 
+void sum(int , int);//function declaration
+int num1=5;// declaration of num1
+int num2=10; // declaration of num2
+
+printf("num1 is %d\n", num1 );// printing value of num1 
+printf("num2 is %d\n", num2);// printing value of num2 
+sum(num1,num2);// calling sum function
+}

@@ -1,0 +1,15 @@
+/*Program to input 2 number and swap
+Name-Ravindra Yadav  */
+
+#include<stdio.h>
+int main()
+{
+int num1,num2,num3;
+printf("enter 2 number");
+scanf("%d%d",&num1,&num2);
+num3=num1;
+num1=num2;
+num2=num3;
+printf("%d%d",num1,num2);
+return 0;
+}

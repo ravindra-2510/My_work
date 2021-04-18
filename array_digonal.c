@@ -24,6 +24,7 @@ void main ()
         }  
     }  
    
+          printf("\ndigonal is:\n");
    //find digonal
    
     for(i=0;i<num;i++)  
@@ -33,7 +34,6 @@ void main ()
         {  
            if(i==j)
            {
-               printf("\ndigonal is:\n");
             printf("\n %d\t",arr[i][j]); // print digonal
            }
         }  

@@ -1,0 +1,27 @@
+/* this program will print char series like:
+after input 3 print abcaabbccaaabbbccc */
+#include<stdio.h>
+void main()
+{
+    int num,i,j,k,l;
+    
+    printf("enter the number of series: \n");
+    scanf("%d", &num);
+    
+    for(i=0;i<num;i++)
+    {
+     for(j=0;j<=i;j++)
+     {
+         printf("a");
+     }
+     
+     for(k=0;k<=i;k++)
+     {
+         printf("b");
+     }
+     for(l=0;l<=i;l++)
+     {
+         printf("c");
+     }
+    }
+}

@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void main()
+{
+    int arr[20],i,size;
+    int j=0,first,no;
+    printf("enter the size of array\n");
+    scanf("%d",&size);
+    printf("enter %d element of array\n", size);
+    for(i=0;i<size;i++)
+    {
+         scanf("%d",&arr[i]);
+    }
+    printf("your array is:\n");
+     for(i=0;i<size;i++)
+    {
+         printf("%d",arr[i]);
+    }
+     first=arr[0];
+     for(i=1;i<size;i++)
+     {
+         
+         arr[j]=arr[i];
+         j++;
+     }
+     no=size-1;
+    arr[no]=first;
+    
+    printf("after shifting one index left the array and first index on the last index\n");
+  for(int j = 0; j < size; j++) {
+     printf("%d\n", arr[j]);
+  }
+
+    
+}

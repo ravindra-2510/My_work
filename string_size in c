@@ -1,0 +1,32 @@
+//sub string
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+ 
+    char str[100];
+  int i,size,temp,flag=0;
+  scanf("%s",&str);
+  size=strlen(str);
+  for (i=0;i<size;i++)
+  {
+     if(str[i]=='r')
+      {
+         
+      if(str[i+1]=='a')
+      {
+         flag=1;
+      }
+      
+  }
+  }
+  if(flag==1)
+  printf("Yes");
+  else
+  printf("No");
+return 0;
+}

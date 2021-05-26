@@ -1,0 +1,32 @@
+/*   Sample Input 0
+
+arYAn
+Sample Output 0
+
+Yes
+
+*/
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i,flag=0;
+    scanf("%s",&str);
+    for(i=0;str[i] != '\0';i++)
+    {
+        if(str[i]>='A' && str[i]<='Z')
+        {
+            if(str[i+1]>='A' && str[i+1]<='Z')
+            {
+            
+            flag=1;
+            }
+        }
+    }
+    if(flag==1)
+    printf("Yes");
+    else
+    printf("No");
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[100];
+    int i,count=1;
+    scanf("%[^\n]%*c", str);
+    int size=strlen(str);
+    printf("\n%d\n",size);
+    for(i=0;i<size;i++)
+    {
+        if(str[i] ==' ')
+        {
+             count++;
+             
+        }
+    }
+  
+    printf("total word in sentence is:");
+    printf("\n%d",count);
+     printf("\n%s",str);
+    return 0;
+}
